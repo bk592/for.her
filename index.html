@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<title>For Mrs Sandhu ❤️</title> 
+
+<style>
+/* Background Love Text */
+#bgText{
+ position:fixed;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%);
+ font-size:80px;
+ font-family:'Pacifico',cursive;
+ color: rgba(255, 0, 0, 0.18);
+ z-index:-1;
+ text-align:center;
+}
+
+/* Envelope */
+#envelope{
+  font-size:40px;
+  cursor:pointer;
+  background:rgba(255,255,255,0.2);
+  padding:15px;
+  border-radius:15px;
+  width:120px;
+  margin:auto;
+}
+
+#envelope:hover{
+  transform:scale(1.1);
+  transition: 0.3s ease;
+}
+
+/* NEW VIDEO ENVELOPE */
+#videoEnvelope{
+  font-size:40px;
+  cursor:pointer;
+  background:rgba(255,255,255,0.2);
+  padding:15px;
+  border-radius:15px;
+  width:180px;
+  margin:20px auto;
+}
+
+#videoEnvelope:hover{
+  transform:scale(1.1);
+  transition:0.3s ease;
+}
+
+/* Popup Letter */
+#popupLetter{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.8);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  z-index:999;
+}
+
+#popupLetter p{
+  background:white;
+  color:#ff2f6d;
+  padding:20px;
+  border-radius:15px;
+  max-width:300px;
+}
+
+/* VIDEO POPUP */
+#videoPopup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.85);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+
+.videoBox{
+  background:white;
+  padding:20px;
+  border-radius:20px;
+  max-width:350px;
+  max-height:90vh;
+  overflow-y:auto;
+  text-align:center;
+}
+
+.loveVideo{
+  width:100%;
+  border-radius:15px;
+  margin:10px 0;
+  box-shadow:0 0 20px rgba(255,0,100,0.5);
+}
+
+body{
+    margin:0;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(135deg,#ff4e8a,#ff9ccf,#ffd1e8);
+    min-height:100vh;
+    text-align:center;
+    color:#fff;
+}
+
+/* Password Screen */
+#lock{
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg,#ff2f6d,#ff7fbf,#ffc1dd);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+input{
+    padding:10px;
+    font-size:18px;
+    border-radius:6px;
+    border:none;
+}
+
+button{
+    padding:10px 22px;
+    margin-top:12px;
+    font-size:16px;
+    border:none;
+    border-radius:20px;
+    background:#ff2f6d;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff5f9a;
+}
+
+/* Main Content */
+#main{
+    display:none;
+    padding:30px 15px;
+}
+
+h1{
+    text-shadow:0 0 10px #ff2f6d;
+}
+
+p{
+    font-size:18px;
+    max-width:600px;
+    margin:auto;
+    line-height:1.6;
+}
+
+/* Images */
+img{
+    width:260px;
+    max-width:90%;
+    border-radius:20px;
+    margin:15px;
+    box-shadow:0 0 20px rgba(255,0,100,0.6);
+}
+
+/* Hearts */
+.heart{
+    position:fixed;
+    font-size:22px;
+    animation:float 6s linear infinite;
+}
+
+@keyframes float{
+    from{bottom:-30px;opacity:1;}
+    to{bottom:110%;opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="love.mp3" type="audio/mpeg">
+</audio>
+
+<div id="bgText">
+I Love You meri jnnu  ❤️
+</div>
+
+<!-- Password -->
+<div id="lock">
+    <h2>Enter Password ❤️</h2>
+    <input type="password" id="pass" placeholder="Password">
+    <button onclick="check()">Open</button>
+    <p id="msg"></p>
+</div>
+
+<!-- Main Website -->
+<div id="main">
+
+<h1>For Mrs Sandhu 💖</h1>
+
+<p>
+Ajj appa nu 2 mahina ho gaya bby, te m bahut khushnaseeb haan💖
+Thank you meri life ch aan lyi, mera bnke rehn lyi, te hamesha mnu khush rakhn layi 😘
+I love you soooooooooo sooooooo soooooo much putt 💕
+M bayan nahi kr skda k m kina grateful hn tuhnu apni zindagi ch paake 🥺❤️
+I love you bahuuuuut saaaaraaa 💞
+
+Mnu pata appa kde-kde bhut klesh kar lainde hn, par hrr vaar ikathe rehna choose krde hn — oh hee matter krda hai ❤️
+I love you bby, kde mnu chhd ke na jana, m vi kde tuhnu chhd ke nhi jaunga 🤞💖
+
+Mere utte apna vishwas kde na uthaiyo, m kde vi oh kmm nahi karunga jis naal tuhda trust tutte 🥹❤️
+Bby, m tuhde naal bahut khush hn 😘
+Kde eh na sochya kro ki m time nhi dindi — eh sab galat glla ne 😤💗
+Tuhde jinna pyaar koi nhi dinda mnu ❤️
+
+I love you bahuuuuut saaaara, hamesha mere naal rehna bby 💕
+Thank you menu roj ehna khush rakhn lyi 😘
+I love you soooooo much 😍
+Mwahhhhhhhhhh💋💋💋💋💋💋💋💋💋💋❤️
+I LOVE YOU MERIIII MRS SANDHU💋💋💋💋💋💋💋💋💋💋💋💕  
+</p>
+
+<!-- First Envelope -->
+<div id="envelope" onclick="openLetter()">
+  💌
+  <small>Open Me</small>
+</div>
+
+<!-- Second Envelope -->
+<div id="videoEnvelope" onclick="openVideoLetter()">
+  🎬💌
+  <small>Open Special Videos</small>
+</div>
+
+<!-- Hidden Letter -->
+<div id="popupLetter">
+  <h3>MERIIII WIFEYYYYYYYYY 💖</h3>
+  <p>
+    M tuhda hmesha dhyan rkhuga tuhnu dissappoint ni kruga appa ik happy family bnavage tuc m apne bche bss hor koi ni....bhut ache parents bnage appa......jina mrji klesh hoje appa sath ni chhdna bby i love you soooooooooo soooooooooooo much putttt💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋meri jaan vassdi h tuhde ch bbu
+    i love you puttt i love you soooooooo muchhhhhhhh mwahhhhhhhh💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋
+  </p>
+  <button onclick="closeLetter()">Close</button>
+</div>
+
+<!-- VIDEO POPUP -->
+<div id="videoPopup">
+  <div class="videoBox">
+    <h3>Our Special Moments 💕</h3>
+
+    <video controls class="loveVideo">
+      <source src="video1.mp4" type="video/mp4">
+    </video>
+
+    <video controls class="loveVideo">
+      <source src="video2.mp4" type="video/mp4">
+    </video>
+
+    <button onclick="closeVideoLetter()">Close</button>
+  </div>
+</div>
+
+<!-- Images -->
+<img src="IMG_20260107_190441_597.jpg">
+<img src="IMG_20260107_190447_702.jpg">
+
+</div>
+
+<script>
+function check(){
+  let p = document.getElementById("pass").value;
+
+  if(p === "13dec415"){
+    document.getElementById("lock").style.display = "none";
+    document.getElementById("main").style.display = "block";
+    document.getElementById("bgMusic").play();
+    startHearts();
+  } else {
+    document.getElementById("msg").innerText = "Wrong Password 😢";
+  }
+}
+
+function startHearts(){
+  setInterval(()=>{
+    let h = document.createElement("div");
+    h.className = "heart";
+    h.innerHTML = "💖";
+    h.style.left = Math.random()*100 + "%";
+    document.body.appendChild(h);
+    setTimeout(()=>h.remove(),6000);
+  },350);
+}
+
+function openLetter(){
+  document.getElementById("popupLetter").style.display="flex";
+}
+
+function closeLetter(){
+  document.getElementById("popupLetter").style.display="none";
+}
+
+function openVideoLetter(){
+  document.getElementById("videoPopup").style.display="flex";
+}
+
+function closeVideoLetter(){
+  let videos = document.querySelectorAll("#videoPopup video");
+  videos.forEach(v => {
+      v.pause();
+      v.currentTime = 0;
+  });
+  document.getElementById("videoPopup").style.display="none";
+}
+</script>
+
+</body>
+</html>
